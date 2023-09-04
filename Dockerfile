@@ -11,6 +11,9 @@ COPY .mvn .mvn
 # Copy the source code to the container
 COPY src src
 
+
+RUN ls -l
+
 # Make the mvnw script executable
 RUN chmod +x mvnw
 
