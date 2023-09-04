@@ -2,7 +2,7 @@
 FROM openjdk:11-jre-slim
 
 # Set the working directory to /app
-WORKDIR /app
+WORKDIR /MobileSubscribers
 
 # Copy the Maven project file and POM dependencies file to the container
 COPY pom.xml .
