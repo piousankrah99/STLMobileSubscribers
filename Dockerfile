@@ -15,7 +15,7 @@ COPY src src
 RUN ls -l
 
 # Make the mvnw script executable
-RUN chmod +x mvnw
+RUN chmod +x /MobileSubscribers/mvnw
 
 # Build the application with Maven (downloads dependencies and compiles code)
 RUN ./mvnw package -DskipTests
