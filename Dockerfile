@@ -11,8 +11,8 @@ COPY .mvn .mvn
 # Copy the source code to the container
 COPY src src
 
-# Add execute permissions to the mvnw script
-RUN chmod +x .mvn/wrapper/mvnw
+# Make the mvnw script executable
+RUN chmod +x mvnw
 
 # Build the application with Maven (downloads dependencies and compiles code)
 RUN ./mvnw package -DskipTests
