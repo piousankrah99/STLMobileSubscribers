@@ -12,7 +12,7 @@ COPY .mvn .mvn
 COPY src src
 
 # Make the mvnw script executable
-RUN chmod +x .mvn\wrapper
+RUN chmod +x ./mvnw
 
 # Build the application with Maven (downloads dependencies and compiles code)
 RUN ./mvnw package -DskipTests
