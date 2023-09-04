@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.MobileSubscribers.MobileSubscribers.MobileSubscribersApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.471 s - in com.MobileSubscribers.MobileSubscribers.MobileSubscribersApplicationTests
