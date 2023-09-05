@@ -10,8 +10,8 @@ COPY . .
 # Build the application
 RUN mvn clean package -DskipTests
 
-# Use the same OpenJDK 17 image for the final image
-FROM adoptopenjdk/openjdk17:alpine-jre
+# Use a lightweight Alpine-based JRE image for the final image
+FROM openjdk:11-jre-slim
 
 # Set the working directory in the final image
 WORKDIR /app
