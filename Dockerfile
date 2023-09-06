@@ -11,7 +11,7 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 # Use a lightweight Alpine-based JRE image for the final image
-FROM openjdk:11-jre-slim
+FROM openjdk:17-jre-slim
 
 # Set the working directory in the final image
 WORKDIR /app
