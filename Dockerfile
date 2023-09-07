@@ -20,7 +20,7 @@ WORKDIR /app
 COPY --from=build /app/target/MobileSubscribers-0.0.1-SNAPSHOT.jar ./MobileSubscribers-0.0.1-SNAPSHOT.jar
 
 # Expose the port that your application listens on (change as needed)
-EXPOSE 8080
+EXPOSE 5432
 
 # # Define environment variables for database connection
 ENV SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/mobilesubscribers
